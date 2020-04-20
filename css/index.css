@@ -87,58 +87,93 @@ video {
   vertical-align: baseline;
 }
 header {
-  width: 80%;
-  padding: 2.5% 15%;
-  background-color: #3575;
+  width: 100%;
+  padding: 2.5%;
   display: flex;
   justify-content: center;
-  justify-content: space-evenly;
 }
 header .nav-bar {
   font-size: 1.5rem;
   font-family: 'Raleway', sans-serif;
 }
+header .nav-bar .vl-1 {
+  border-left: 2px solid #585a58;
+  height: 50px;
+  position: absolute;
+  left: 50%;
+  margin-left: -30px;
+  top: 30px;
+}
+header .nav-bar .vl-2 {
+  border-left: 2px solid #585a58;
+  height: 50px;
+  position: absolute;
+  left: 53.5%;
+  margin-left: 2.5%;
+  top: 30px;
+}
+header .nav-bar a {
+  margin: 20px;
+}
 body {
   margin: none;
+  color: #2b2b2b;
   font-family: 'Raleway', sans-serif;
   line-height: 2rem;
   background-color: #1991;
 }
 .title-container {
-  background-color: #1987;
-  width: 80%;
+  background-image: url(/assets/home.png);
+  background-size: cover;
+  width: 70%;
+  height: 600px;
+  margin: 0 auto;
   display: flex;
   align-items: center;
-}
-.title-container img {
-  border-radius: 10px;
-  width: 80%;
-  display: flex;
-  justify-content: space-evenly;
+  flex-direction: column;
+  align-items: baseline;
 }
 .title-container h1 {
   font-size: 200%;
-  color: #197219;
+  color: #ffffff;
+  margin: 20% auto 0;
+}
+.title-container .btn-container {
+  width: 60%;
+  height: 20px;
+  margin: 0 30% 30%;
+}
+.title-container .btn-container .contact-btn {
+  margin: 20%;
+  display: flex;
+  padding: 15px;
+  font-size: 1.5rem;
+  align-self: center;
 }
 hr {
   margin: 2%;
 }
 .artists-container {
   display: flex;
+  flex-wrap: row-nowrap;
   justify-content: space-evenly;
 }
 .artists-container .artist {
+  width: 50%;
+  height: 300px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-evenly;
 }
 .artists-container .artist .bio {
+  margin: 10px;
   width: 50%;
-  height: 50px;
+  height: 300px;
   padding: 60px;
+  background-color: #212718;
 }
 .artists-container .artist img {
   border-radius: 10px;
-  width: 500px;
-  background-color: #1964;
+  width: 400px;
+  height: 300px;
 }
